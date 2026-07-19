@@ -1169,7 +1169,7 @@ msgstr ""
 msgid "Carbon column"
 msgstr ""
 
-msgid "Carbon Logo"
+msgid "Grovyn Logo"
 msgstr ""
 
 msgid "Carbon Value"

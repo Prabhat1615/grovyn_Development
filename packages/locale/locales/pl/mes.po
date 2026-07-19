@@ -137,7 +137,7 @@ msgstr "Anuluj"
 msgid "Cancelled"
 msgstr "Anulowano"
 
-msgid "Carbon Logo"
+msgid "Grovyn Logo"
 msgstr "Logo Carbon"
 
 msgid "Cards"

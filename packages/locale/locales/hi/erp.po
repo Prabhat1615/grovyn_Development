@@ -1983,7 +1983,7 @@ msgstr "Carbon को आपकी कंपनी के तरीके से
 msgid "Carbon leads"
 msgstr "कार्बन नेतृत्व करता है"
 
-msgid "Carbon Logo"
+msgid "Grovyn Logo"
 msgstr "कार्बन लोगो"
 
 msgid "Carbon only"

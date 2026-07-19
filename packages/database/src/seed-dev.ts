@@ -41,7 +41,7 @@ import type { Database } from "./types.ts";
 dotenv.config();
 
 const DEV_PASSWORD = "password";
-const DEV_COMPANY_NAME = "Carbon Development";
+const DEV_COMPANY_NAME = "Grovyn";
 
 /**
  * Infers a first name from an email address.

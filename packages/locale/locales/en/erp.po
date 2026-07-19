@@ -1983,8 +1983,8 @@ msgstr "Carbon is configured the way your company runs, your data is loaded, and
 msgid "Carbon leads"
 msgstr "Carbon leads"
 
-msgid "Carbon Logo"
-msgstr "Carbon Logo"
+msgid "Grovyn Logo"
+msgstr "Grovyn Logo"
 
 msgid "Carbon only"
 msgstr "Carbon only"

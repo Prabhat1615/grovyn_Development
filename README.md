@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://carbon.ms">
-      <img width="auto" height="100" alt="Carbon Logo" src="https://github.com/user-attachments/assets/177634ca-5c37-43e2-8d55-1b9f490866d5" />
+      <img width="auto" height="100" alt="Grovyn Logo" src="https://github.com/user-attachments/assets/177634ca-5c37-43e2-8d55-1b9f490866d5" />
    </a>
 </p>
 
@@ -89,7 +89,6 @@ Technical highlights:
 - [Stripe](https://stripe.com) - billing
 - [Rust](https://www.rust-lang.org) – geometry service (FCL collision + OpenCASCADE CAD)
 
-
 ## Codebase
 
 The monorepo follows the Turborepo convention of grouping packages into one of two folders.
@@ -99,12 +98,12 @@ The monorepo follows the Turborepo convention of grouping packages into one of t
 
 ### `/apps`
 
-| Package Name | Description     | How to run                                          |
-| ------------ | --------------- | --------------------------------------------------- |
-| `erp`        | ERP Application | `pnpm dev` (boots stack + ERP via `crbn up` picker) |
-| `mes`        | MES             | `pnpm dev` (select MES in picker, or both)          |
-| `academy`    | Academy         | `pnpm dev:academy`                                  |
-| `starter`    | Starter         | `pnpm dev:starter`                                  |
+| Package Name | Description                                                    | How to run                                                                        |
+| ------------ | -------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `erp`        | ERP Application                                                | `pnpm dev` (boots stack + ERP via `crbn up` picker)                               |
+| `mes`        | MES                                                            | `pnpm dev` (select MES in picker, or both)                                        |
+| `academy`    | Academy                                                        | `pnpm dev:academy`                                                                |
+| `starter`    | Starter                                                        | `pnpm dev:starter`                                                                |
 | `assembler`  | Geometry service (Rust): STEP → GLB + assembly motion planning | spawned by `crbn up` (needs a release binary — see [Installation](#installation)) |
 
 `pnpm dev` runs the per-worktree dev CLI (`crbn up`). ERP and MES are first-class — the CLI boots the docker stack, applies migrations, regenerates types/swagger, and spawns the selected apps behind portless. The `assembler` geometry service is spawned too when its release binary is present. Academy and starter are standalone Turborepo entries.
@@ -145,11 +144,11 @@ Make sure that you have [Docker installed](https://docs.docker.com/desktop/insta
 
 In addition you must configure the following external services:
 
-| Service | Purpose                    | URL                                                            |
-| ------- | -------------------------- | -------------------------------------------------------------- |
-| Posthog | Product analytics platform | [https://us.posthog.com/signup](https://us.posthog.com/signup) |
-| Stripe | Payments service | [https://dashboard.stripe.com/login](https://dashboard.stripe.com/login) |
-| Resend | Email service | [https://resend.com](https://resend.com) |
+| Service | Purpose                    | URL                                                                      |
+| ------- | -------------------------- | ------------------------------------------------------------------------ |
+| Posthog | Product analytics platform | [https://us.posthog.com/signup](https://us.posthog.com/signup)           |
+| Stripe  | Payments service           | [https://dashboard.stripe.com/login](https://dashboard.stripe.com/login) |
+| Resend  | Email service              | [https://resend.com](https://resend.com)                                 |
 
 Posthog has a free tier which should be plenty to support local development. If you're self hosting and you don't want to use Posthog, it's pretty easy to remove the analytics.
 
@@ -293,15 +292,15 @@ $ pnpm dev                # equivalent to `crbn up` — picker lets you choose E
 
 `crbn up` prints a summary box with the live URLs once the stack is healthy. Defaults look like:
 
-| Surface         | URL                                                            |
-| --------------- | -------------------------------------------------------------- |
-| ERP             | `https://<worktree>.erp.dev`                                   |
-| MES             | `https://<worktree>.mes.dev`                                   |
-| Supabase API    | `https://<worktree>.api.dev`                                   |
-| Supabase Studio | `https://<worktree>.studio.dev`                                |
-| Inngest         | `https://<worktree>.inngest.dev`                               |
-| Mail (Inbucket) | `https://<worktree>.mail.dev`                                  |
-| Postgres        | `postgresql://postgres:postgres@localhost:<PORT_DB>/postgres`  |
+| Surface         | URL                                                           |
+| --------------- | ------------------------------------------------------------- |
+| ERP             | `https://<worktree>.erp.dev`                                  |
+| MES             | `https://<worktree>.mes.dev`                                  |
+| Supabase API    | `https://<worktree>.api.dev`                                  |
+| Supabase Studio | `https://<worktree>.studio.dev`                               |
+| Inngest         | `https://<worktree>.inngest.dev`                              |
+| Mail (Inbucket) | `https://<worktree>.mail.dev`                                 |
+| Postgres        | `postgresql://postgres:postgres@localhost:<PORT_DB>/postgres` |
 
 `<worktree>` is derived from the branch name (e.g. `sid-local-dev` → `local-dev`). The main checkout drops the prefix and just uses `erp.dev`, `mes.dev`, etc. Ports for raw TCP services (Postgres, Inbucket, Inngest) are dynamic per-worktree — `crbn status` is the source of truth.
 
@@ -402,17 +401,21 @@ To restore a production database snapshot locally, use the `scripts/restore-data
    $ crbn up --no-migrate
    ```
 3. Run the restore script from your worktree root, passing the path to the backup file:
+
    ```bash
    $ ./scripts/restore-database.sh /path/to/db_cluster.backup
    # …or for .dump archives:
    $ ./scripts/restore-database.sh /path/to/postgres_YYYYMMDD.dump
    ```
+
    To also get local admin access, set `ADMIN_EMAIL` to your production email. The script will upgrade your account to Admin in all companies you already belong to and reset your password locally:
+
    ```bash
    $ ADMIN_EMAIL=you@example.com ./scripts/restore-database.sh /path/to/backup.backup
    # Optional: set a custom local password (default: localpass)
    $ ADMIN_EMAIL=you@example.com ADMIN_PASSWORD=mypass ./scripts/restore-database.sh /path/to/backup.backup
    ```
+
    > **Note:** Emails are not scrubbed — real production addresses will be present in the local DB. Ensure local email sending is disabled or pointed at a sandbox (e.g. Mailpit) before triggering any email flows.
 
 4. Regenerate types so app code reflects the restored schema:
@@ -484,7 +487,6 @@ const { data, error } = await carbon
   .eq("companyId", companyId);
 ```
 
-
 ## Translations
 
 In order to run `pnpm run translate` you must first run:
@@ -498,6 +500,7 @@ npx linguito config set \
   llmSettings.provider=ollama \
   llmSettings.url=http://127.0.0.1:11434/api
 ```
+
 ## Migration Notes
 
 ### Trigger.dev to Inngest

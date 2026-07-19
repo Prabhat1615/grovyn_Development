@@ -1983,8 +1983,8 @@ msgstr "Carbon, şirketinizin çalışma şekline göre yapılandırılmış, ve
 msgid "Carbon leads"
 msgstr "Carbon yönetir"
 
-msgid "Carbon Logo"
-msgstr "Carbon Logosu"
+msgid "Grovyn Logo"
+msgstr "Grovyn Logosu"
 
 msgid "Carbon only"
 msgstr "Yalnızca Carbon"

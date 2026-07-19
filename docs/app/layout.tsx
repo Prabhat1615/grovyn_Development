@@ -82,7 +82,7 @@ const jsonLd = JSON.stringify({
       "@id": `${SITE.url}/#organization`,
       name: "Carbon",
       url: SITE.url,
-      logo: `${SITE.url}/carbon-mark-light.svg`
+      logo: `${SITE.url}/grovyn.png`
     },
     {
       "@type": "WebSite",
@@ -122,13 +122,13 @@ export default function Layout({ children }: { children: ReactNode }) {
         <link
           rel="icon"
           type="image/svg+xml"
-          href="/carbon-mark-light.svg"
+          href="/grovyn.png"
           media="(prefers-color-scheme: light)"
         />
         <link
           rel="icon"
           type="image/svg+xml"
-          href="/carbon-mark-dark.svg"
+          href="//grovyn.png.svg"
           media="(prefers-color-scheme: dark)"
         />
         <link

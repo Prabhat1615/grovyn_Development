@@ -96,12 +96,12 @@ export function OnboardingHub({
       <header className="flex flex-col items-center text-center gap-3 pt-2">
         <div className="size-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-1">
           <img
-            src="/carbon-mark-light.svg"
+            src="/grovyn.png"
             alt="Carbon"
             className="size-7 dark:hidden"
           />
           <img
-            src="/carbon-mark-dark.svg"
+            src="//grovyn.png.svg"
             alt="Carbon"
             className="size-7 hidden dark:block"
           />

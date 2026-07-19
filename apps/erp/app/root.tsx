@@ -58,32 +58,32 @@ export const links: LinksFunction = () => {
     { href: SonnerStyle, rel: "stylesheet" },
     {
       rel: "icon",
-      type: "image/svg+xml",
-      href: "/carbon-mark-light.svg",
+      type: "image/png",
+      href: "/grovyn.png",
       media: "(prefers-color-scheme: light)"
     },
     {
       rel: "icon",
-      type: "image/svg+xml",
-      href: "/carbon-mark-dark.svg",
+      type: "image/png",
+      href: "/grovyn.png",
       media: "(prefers-color-scheme: dark)"
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "32x32",
-      href: "/favicon-32x32.png"
+      href: "/grovyn.png"
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "16x16",
-      href: "/favicon-16x16.png"
+      href: "/grovyn.png"
     },
     {
       rel: "apple-touch-icon",
       sizes: "180x180",
-      href: "/apple-touch-icon.png"
+      href: "/grovyn.png"
     },
     { rel: "manifest", href: "/site.webmanifest" }
   ];
@@ -92,7 +92,7 @@ export const links: LinksFunction = () => {
 export const meta: MetaFunction = ({ error }) => {
   return [
     {
-      title: error ? "Carbon | Error" : "Carbon"
+      title: error ? "Grovyn | Error" : "Grovyn"
     }
   ];
 };

@@ -22,14 +22,14 @@ export default function ConfirmMagicLink() {
     <>
       <div className="flex justify-center mb-8">
         <img
-          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-light.svg"}
+          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/grovyn.png"}
           className="w-24 dark:hidden"
-          alt={t`Carbon Logo`}
+          alt={t`Grovyn Logo`}
         />
         <img
-          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-dark.svg"}
+          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "//grovyn.png.svg"}
           className="w-24 hidden dark:block"
-          alt={t`Carbon Logo`}
+          alt={t`Grovyn Logo`}
         />
       </div>
       <div className="rounded-lg md:bg-card md:border md:border-border md:shadow-lg p-8 w-[380px]">

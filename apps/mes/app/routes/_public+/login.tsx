@@ -273,13 +273,13 @@ export default function LoginRoute() {
     <>
       <div className="flex justify-center mb-8">
         <img
-          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-light.svg"}
-          alt={t`Carbon Logo`}
+          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/grovyn.png"}
+          alt={t`Grovyn Logo`}
           className="w-24 dark:hidden"
         />
         <img
-          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-dark.svg"}
-          alt={t`Carbon Logo`}
+          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "//grovyn.png.svg"}
+          alt={t`Grovyn Logo`}
           className="w-24 hidden dark:block"
         />
       </div>

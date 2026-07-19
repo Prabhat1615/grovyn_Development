@@ -98,7 +98,7 @@ const Breadcrumbs = () => {
   const isMobile = useIsMobile();
   const { company } = useUser();
   const mode = useMode();
-  const logo = mode === "dark" ? company?.logoDarkIcon : company?.logoLightIcon;
+  const logo = "/grovyn.png"
 
   return (
     <HStack className="items-center h-full hidden md:flex -ml-2" spacing={0}>
@@ -107,7 +107,7 @@ const Breadcrumbs = () => {
           {logo ? (
             <img
               src={logo}
-              alt={`${company.name} logo`}
+              alt={"grovyn logo"}
               className="w-full h-auto rounded"
             />
           ) : (
@@ -209,7 +209,7 @@ function CompanyBreadcrumb() {
                 className="px-2 focus-visible:ring-transparent"
                 rightIcon={<LuChevronsUpDown />}
               >
-                {routeData?.company.name}
+                {"Grovyn"}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="min-w-[240px]">
@@ -310,7 +310,7 @@ function CompanyBreadcrumb() {
           </Modal>
         </>
       ) : (
-        <BreadcrumbLink to="/">{routeData?.company.name}</BreadcrumbLink>
+        <BreadcrumbLink to="/">Grovyn</BreadcrumbLink>
       )}
     </BreadcrumbItem>
   );

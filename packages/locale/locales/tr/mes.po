@@ -137,8 +137,8 @@ msgstr "İptal"
 msgid "Cancelled"
 msgstr "İptal edildi"
 
-msgid "Carbon Logo"
-msgstr "Carbon Logosu"
+msgid "Grovyn Logo"
+msgstr "Grovyn Logosu"
 
 msgid "Cards"
 msgstr "Kartlar"

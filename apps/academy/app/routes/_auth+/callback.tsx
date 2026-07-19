@@ -144,13 +144,13 @@ export default function AuthCallback() {
     <div className="flex flex-col items-center justify-center">
       <div className="flex justify-center mb-8">
         <img
-          src="/carbon-mark-light.svg"
-          alt="Carbon Logo"
+          src="/grovyn.png"
+          alt="Grovyn Logo"
           className="w-24 dark:hidden"
         />
         <img
-          src="/carbon-mark-dark.svg"
-          alt="Carbon Logo"
+          src="//grovyn.png.svg"
+          alt="Grovyn Logo"
           className="w-24 hidden dark:block"
         />
       </div>

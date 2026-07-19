@@ -179,13 +179,13 @@ export default function AuthorizeRoute() {
       <div className="flex w-[380px] flex-col items-center space-y-6">
         <div className="flex justify-center">
           <img
-            src="/carbon-mark-light.svg"
-            alt="Carbon Logo"
+            src="/grovyn.png"
+            alt="Grovyn Logo"
             className="w-24 dark:hidden"
           />
           <img
-            src="/carbon-mark-dark.svg"
-            alt="Carbon Logo"
+            src="//grovyn.png.svg"
+            alt="Grovyn Logo"
             className="hidden w-24 dark:block"
           />
         </div>

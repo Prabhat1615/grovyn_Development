@@ -52,13 +52,13 @@ export const links: Route.LinksFunction = () => [
   {
     rel: "icon",
     type: "image/svg+xml",
-    href: "/carbon-mark-light.svg",
+    href: "/grovyn.png",
     media: "(prefers-color-scheme: light)"
   },
   {
     rel: "icon",
     type: "image/svg+xml",
-    href: "/carbon-mark-dark.svg",
+    href: "//grovyn.png.svg",
     media: "(prefers-color-scheme: dark)"
   },
   {

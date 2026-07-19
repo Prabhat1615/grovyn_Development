@@ -15,10 +15,10 @@ export function SiteLogo() {
     <Link
       href="/"
       className="flex shrink-0 items-center no-underline"
-      aria-label="Carbon home"
-      onClick={() => window.dispatchEvent(new CustomEvent("carbon:home"))}
+      aria-label="Grovyn home"
+      onClick={() => window.dispatchEvent(new CustomEvent("grovyn:home"))}
     >
-      <img src="/carbon-word-light.svg" alt="Carbon" width={99} height={24} className="block" />
+      <img src="/grovyn.png" alt="Grov" width={99} height={24} className="block" />
     </Link>
   );
 }

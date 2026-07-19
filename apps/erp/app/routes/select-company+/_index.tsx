@@ -75,16 +75,16 @@ export default function SelectCompany() {
     <div className="w-full max-w-[26rem] overflow-hidden rounded-2xl bg-card text-card-foreground shadow-2xl ring-1 ring-black/5 antialiased dark:ring-white/10">
       <div className="flex flex-col items-center gap-4 px-8 pb-6 pt-9">
         <img
-          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-light.svg"}
-          alt="Carbon Logo"
+          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/grovyn.png"}
+          alt="Grovyn Logo"
           className={cn(
             "w-10 dark:hidden",
             CONTROLLED_ENVIRONMENT && "grayscale"
           )}
         />
         <img
-          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-dark.svg"}
-          alt="Carbon Logo"
+          src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "//grovyn.png.svg"}
+          alt="Grovyn Logo"
           className={cn(
             "hidden w-10 dark:block",
             CONTROLLED_ENVIRONMENT && "grayscale"

@@ -1983,7 +1983,7 @@ msgstr "Carbon настроена в соответствии с тем, как 
 msgid "Carbon leads"
 msgstr "Carbon ведёт"
 
-msgid "Carbon Logo"
+msgid "Grovyn Logo"
 msgstr "Логотип Carbon"
 
 msgid "Carbon only"

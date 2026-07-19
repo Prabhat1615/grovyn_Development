@@ -119,13 +119,13 @@ export default function Invite() {
       <VStack spacing={4} className="max-w-lg items-center text-center">
         <div className="flex justify-center mb-8">
           <img
-            src="/carbon-mark-light.svg"
-            alt={t`Carbon Logo`}
+            src="/grovyn.png"
+            alt={t`Grovyn Logo`}
             className="w-24 dark:hidden"
           />
           <img
-            src="/carbon-mark-dark.svg"
-            alt={t`Carbon Logo`}
+            src="//grovyn.png.svg"
+            alt={t`Grovyn Logo`}
             className="w-24 hidden dark:block"
           />
         </div>
@@ -156,13 +156,13 @@ export default function Invite() {
           initial={{ opacity: 0, scale: 0.4 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          src="/carbon-mark-light.svg"
-          alt="Carbon Logo"
+          src="/grovyn.png"
+          alt="Grovyn Logo"
           className="w-24 dark:hidden"
         />
         <img
-          src="/carbon-mark-dark.svg"
-          alt="Carbon Logo"
+          src="//grovyn.png.svg"
+          alt="Grovyn Logo"
           className="w-24 hidden dark:block"
         />
 

@@ -1983,7 +1983,7 @@ msgstr "Carbon est configuré selon le fonctionnement de votre entreprise, vos d
 msgid "Carbon leads"
 msgstr "Carbon leads"
 
-msgid "Carbon Logo"
+msgid "Grovyn Logo"
 msgstr "Logo Carbon"
 
 msgid "Carbon only"

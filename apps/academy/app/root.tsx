@@ -66,32 +66,32 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: NProgress },
   {
     rel: "icon",
-    type: "image/svg+xml",
-    href: "/carbon-mark-light.svg",
+    type: "image/png",
+    href: "/grovyn.png",
     media: "(prefers-color-scheme: light)"
   },
   {
     rel: "icon",
-    type: "image/svg+xml",
-    href: "/carbon-mark-dark.svg",
+    type: "image/png",
+    href: "/grovyn.png",
     media: "(prefers-color-scheme: dark)"
   },
   {
     rel: "icon",
     type: "image/png",
     sizes: "32x32",
-    href: "/favicon-32x32.png"
+    href: "/grovyn.png"
   },
   {
     rel: "icon",
     type: "image/png",
     sizes: "16x16",
-    href: "/favicon-16x16.png"
+    href: "/grovyn.png"
   },
   {
     rel: "apple-touch-icon",
     sizes: "180x180",
-    href: "/apple-touch-icon.png"
+    href: "/grovyn.png"
   },
   { rel: "manifest", href: "/site.webmanifest" }
 ];
@@ -99,7 +99,7 @@ export const links: LinksFunction = () => [
 export const meta: MetaFunction = () => {
   return [
     {
-      title: "Carbon Academy"
+      title: "Grovyn"
     }
   ];
 };
@@ -291,13 +291,13 @@ export default function App() {
                 className="cursor-pointer inline-flex flex-row items-end gap-2 flex-shrink-0 font-display"
               >
                 <img
-                  src="/carbon-word-light.svg"
-                  alt="Carbon"
+                  src="/grovyn.png"
+                  alt="Grovyn"
                   className="h-7 w-auto block dark:hidden"
                 />
                 <img
-                  src="/carbon-word-dark.svg"
-                  alt="Carbon"
+                  src="/grovyn.png"
+                  alt="Grovyn"
                   className="h-7 w-auto hidden dark:block"
                 />
               </a>
@@ -477,13 +477,13 @@ export function ErrorBoundary({ error }: { error: unknown }) {
       <div className="light">
         <div className="flex flex-col w-full h-screen  items-center justify-center space-y-4 ">
           <img
-            src="/carbon-mark-light.svg"
-            alt="Carbon Logo"
+            src="/grovyn.png"
+            alt="Grovyn Logo"
             className="block max-w-[60px] dark:hidden"
           />
           <img
-            src="/carbon-mark-dark.svg"
-            alt="Carbon Logo"
+            src="//grovyn.png.svg"
+            alt="Grovyn Logo"
             className="max-w-[60px] hidden dark:block"
           />
           <Heading size="h1">Something went wrong</Heading>

@@ -31,16 +31,16 @@ export default function DownloadErrorRoute() {
     <div className="relative flex min-h-dvh flex-col bg-background">
       <header className="p-6">
         <img
-          src="/carbon-word-light.svg"
-          alt="Carbon"
+          src="/grovyn.png"
+          alt="Grovyn"
           className={cn(
             "max-w-[160px] dark:hidden",
             CONTROLLED_ENVIRONMENT && "grayscale"
           )}
         />
         <img
-          src="/carbon-word-dark.svg"
-          alt="Carbon"
+          src="/grovyn.png"
+          alt="Grovyn"
           className={cn(
             "max-w-[160px] hidden dark:block",
             CONTROLLED_ENVIRONMENT && "grayscale"
